@@ -1,7 +1,9 @@
-import React from 'react';
+import { Sidebar } from './Components';
 
 const App = () => {
-    return <div className='text-red-500'>this is a crypto app</div>;
+    return (
+        <Sidebar />
+)
 };
 
 export default App;
