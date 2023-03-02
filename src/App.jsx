@@ -1,4 +1,4 @@
-import { Sidebar, Home, News, Cryptocurrencies } from './Components';
+import { Sidebar, Home, News, Cryptocurrencies, Footer } from './Components';
 import { Routes, Route } from 'react-router-dom';
 const App = () => {
     return (
@@ -12,6 +12,7 @@ const App = () => {
                     element={<Cryptocurrencies />}
                 />
             </Routes>
+            <Footer />
         </>
     );
 };

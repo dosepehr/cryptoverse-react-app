@@ -1,6 +1,6 @@
 // ! common
 export { default as Sidebar } from './Common/Sidebar';
-
+export {default as Footer} from './Common/Footer'
 
 // ! pages
 
