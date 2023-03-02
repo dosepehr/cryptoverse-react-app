@@ -25,7 +25,6 @@ const App = () => {
                 <Sidebar />
                 <Routes>
                     <Route path='/Home' element={<Home coins={coins} />} />
-                    <Route path='/News' element={<News />} />
                     <Route
                         path='/Cryptocurrencies'
                         element={<Cryptocurrencies coins={coins} />}
