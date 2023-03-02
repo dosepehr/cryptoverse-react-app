@@ -45,7 +45,11 @@ const Crypto = ({
             </td>
             <td className='py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
                 <div className='inline-block text-left'>
-                    <Chart sparkline={sparkline} change={change} />
+                    <Chart
+                        sparkline={sparkline}
+                        change={change}
+                        ticks={false}
+                    />
                 </div>
             </td>
         </tr>

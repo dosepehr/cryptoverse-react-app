@@ -11,7 +11,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
-function Chart({ sparkline, change }) {
+function Chart({ sparkline, change ,ticks}) {
     ChartJS.register(
         CategoryScale,
         LinearScale,
@@ -33,7 +33,7 @@ function Chart({ sparkline, change }) {
         scales: {
             x: {
                 ticks: {
-                    display: false,
+                    display: ticks,
                 },
 
                 grid: {
@@ -43,7 +43,7 @@ function Chart({ sparkline, change }) {
             },
             y: {
                 ticks: {
-                    display: false,
+                    display: ticks,
                     beginAtZero: true,
                 },
                 grid: {
