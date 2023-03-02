@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
-
+import { AiOutlineHome } from 'react-icons/ai';
+import { GrBitcoin } from 'react-icons/gr';
 const Sidebar = () => {
     return (
         <div className='h-[85vh] bg-primaryColor w-2/12'>
@@ -20,9 +21,12 @@ const Sidebar = () => {
                         isActive ? 'activeLink' : 'notActiveLink'
                     }
                 >
-                    <span className='hover:text-primaryColor transition-all duration-300'>
-                        Home
-                    </span>
+                    <div className='hover:text-primaryColor transition-all duration-300 flex items-center text-white space-x-2'>
+                        <span>
+                            <AiOutlineHome />
+                        </span>
+                        <span>Home</span>
+                    </div>
                 </NavLink>
                 <NavLink
                     to='Cryptocurrencies'
@@ -30,9 +34,12 @@ const Sidebar = () => {
                         isActive ? 'activeLink' : 'notActiveLink'
                     }
                 >
-                    <span className='hover:text-primaryColor transition-all duration-300'>
-                        Cryptocurrencies
-                    </span>
+                    <div className='hover:text-primaryColor transition-all duration-300 flex items-center text-white space-x-2'>
+                        <span>
+                            <GrBitcoin />
+                        </span>
+                        <span>cryptocurrencies</span>
+                    </div>
                 </NavLink>
             </div>
         </div>
