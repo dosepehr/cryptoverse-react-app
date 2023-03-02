@@ -1,5 +1,5 @@
 import React from 'react';
-import { Crypto, TopCoins } from '../';
+import {TopCoins } from '../';
 const Cryptocurrencies = ({ coins }) => {
     return (
         <div>
