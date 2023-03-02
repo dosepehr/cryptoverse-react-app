@@ -1,6 +1,6 @@
 import { Crypto } from './';
 import { Link } from 'react-router-dom';
-const TopCoins = ({ coins }) => {
+const TopCoins = ({ coins,count }) => {
     return (
         <div>
             <div>
@@ -51,7 +51,7 @@ const TopCoins = ({ coins }) => {
                                 {Object.keys(coins).length > 0 &&
                                     coins.coins.map(
                                         (item, index) =>
-                                            index < 10 && (
+                                            index < count && (
                                                 <Crypto {...item} key={index} />
                                             )
                                     )}

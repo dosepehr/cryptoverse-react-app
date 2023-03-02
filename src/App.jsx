@@ -12,10 +12,6 @@ import { getCoins } from './services';
 const App = () => {
     const [coins, setCoins] = useState([]);
 
-
-
-
-
     useEffect(() => {
         const fetchData = async () => {
             const { data: coinsData } = await getCoins('coins');
@@ -28,14 +24,11 @@ const App = () => {
             <MainLayout>
                 <Sidebar />
                 <Routes>
-                    <Route
-                        path='/Home'
-                        element={<Home coins={coins} />}
-                    />
+                    <Route path='/Home' element={<Home coins={coins} />} />
                     <Route path='/News' element={<News />} />
                     <Route
                         path='/Cryptocurrencies'
-                        element={<Cryptocurrencies />}
+                        element={<Cryptocurrencies coins={coins} />}
                     />
                 </Routes>
             </MainLayout>

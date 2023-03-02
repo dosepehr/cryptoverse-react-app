@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Crypto, TopCoins } from '../';
+const Cryptocurrencies = ({ coins }) => {
+    return (
+        <div>
+            <TopCoins coins={coins} count={500} />
+        </div>
+    );
+};
 
-const Cryptocurrencies = () => {
-  return (
-    <div>Cryptocurrencies</div>
-  )
-}
-
-export default Cryptocurrencies
+export default Cryptocurrencies;

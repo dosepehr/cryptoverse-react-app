@@ -42,7 +42,7 @@ const Home = ({ coins }) => {
                     </div>
                 </div>
             )}
-            <TopCoins coins={coins} />
+            <TopCoins coins={coins} count={10} />
         </div>
     );
 };
