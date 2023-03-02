@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
-        <div className='h-screen bg-primaryColor w-60 '>
+        <div className='h-[85vh] bg-primaryColor w-60 '>
             <div className='flex items-center justify-center space-x-3 p-4'>
                 <img
                     src='/assets/cryptocurrency.png'
