@@ -10,4 +10,9 @@ export { default as Cryptocurrencies } from './Pages/Cryptocurrencies'
 
 // ! Layouts
 
-export {default as MainLayout} from './Layouts/MainLayout'
+export { default as MainLayout } from './Layouts/MainLayout'
+
+
+
+export { default as Crypto } from './Crypto' 
+export {default as TopCoins} from './TopCoins'
