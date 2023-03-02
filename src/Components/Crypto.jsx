@@ -27,7 +27,14 @@ const Crypto = ({
                 <span className='flex justify-center'>$ {marketCap}</span>
             </td>
             <td className='whitespace-nowrap px-3 py-4 text-sm'>
-                <span className='flex justify-center'>{change}</span>
+                <span
+                    className='flex justify-center'
+                    style={{
+                        color: `${change > 0 ? 'green' : 'red'}`,
+                    }}
+                >
+                    {change}
+                </span>
             </td>
             <td className='py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
                 <div className='inline-block text-left'>
