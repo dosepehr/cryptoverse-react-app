@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Chart } from './';
 const Crypto = ({
     name,
     iconUrl,
@@ -9,16 +9,19 @@ const Crypto = ({
     price,
     rank,
     change,
+    sparkline,
 }) => {
     return (
         <tr className=''>
             <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-semibold text-gray-900 sm:pl-6'>
                 {rank}
             </td>
-            <td className='whitespace-nowrap px-3 py-4 flex items-center space-x-2'>
-                <img src={iconUrl} alt='' className='w-7' />
-                <p>{name}</p>
-                <p style={{ color: `${color}` }}>{symbol}</p>
+            <td className='whitespace-nowrap px-3 py-4'>
+                <div className='flex space-x-2'>
+                    <img src={iconUrl} alt='' className='w-7' />
+                    <span>{name}</span>
+                    <span style={{ color: `${color}` }}>{symbol}</span>
+                </div>
             </td>
             <td className='whitespace-nowrap px-3 py-4 font-semibold'>
                 ${price}
@@ -38,7 +41,7 @@ const Crypto = ({
             </td>
             <td className='py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
                 <div className='inline-block text-left'>
-                    {name}'s chart showing here
+                    <Chart sparkline={sparkline} change={change} />
                 </div>
             </td>
         </tr>
