@@ -34,16 +34,6 @@ const Sidebar = () => {
                         Cryptocurrencies
                     </span>
                 </NavLink>
-                <NavLink
-                    to='News'
-                    className={({ isActive }) =>
-                        isActive ? 'activeLink' : 'notActiveLink'
-                    }
-                >
-                    <span className='hover:text-primaryColor transition-all duration-300'>
-                        News
-                    </span>
-                </NavLink>
             </div>
         </div>
     );

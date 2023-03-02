@@ -1,6 +1,6 @@
 import axios from 'axios';
 const BASE_URL = 'https://coinranking1.p.rapidapi.com';
-const options = {
+const coinsOptions = {
     params: {
         referenceCurrencyUuid: 'yhjMzLPhuIDl',
         timePeriod: '24h',
@@ -17,6 +17,5 @@ const options = {
 };
 
 export const getCoins = (url) => {
-    return axios.get(`${BASE_URL}/${url}`, options);
+    return axios.get(`${BASE_URL}/${url}`, coinsOptions);
 };
-

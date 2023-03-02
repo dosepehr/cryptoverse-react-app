@@ -1,5 +1,6 @@
 import React from 'react';
 import { Chart } from './';
+import { Link } from 'react-router-dom';
 const Crypto = ({
     name,
     iconUrl,
@@ -10,18 +11,21 @@ const Crypto = ({
     rank,
     change,
     sparkline,
+    uuid,
 }) => {
     return (
-        <tr className=''>
+        <tr>
             <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-semibold text-gray-900 sm:pl-6'>
                 {rank}
             </td>
             <td className='whitespace-nowrap px-3 py-4'>
-                <div className='flex space-x-2'>
-                    <img src={iconUrl} alt='' className='w-7' />
-                    <span>{name}</span>
-                    <span style={{ color: `${color}` }}>{symbol}</span>
-                </div>
+                <Link to={`/coins/${uuid}`}>
+                    <div className='flex space-x-2'>
+                        <img src={iconUrl} alt='' className='w-7' />
+                        <span>{name}</span>
+                        <span style={{ color: `${color}` }}>{symbol}</span>
+                    </div>
+                </Link>
             </td>
             <td className='whitespace-nowrap px-3 py-4 font-semibold'>
                 ${price}
