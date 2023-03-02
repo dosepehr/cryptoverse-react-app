@@ -4,9 +4,9 @@
 
 
 .notActiveLink {
-    @apply text-white font-thin hover:bg-blue-600 transition-all duration-300 p-4;
+    @apply text-white font-thin hover:bg-secondaryColor duration-300 p-4;
 }
 
 .activeLink {
-    @apply text-white font-thin transition-all duration-300 p-4 bg-blue-600;
+    @apply text-white font-thin transition-all duration-300 p-4 bg-secondaryColor;
 }

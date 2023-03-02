@@ -2,14 +2,14 @@ import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
-        <div className='h-screen bg-blue-900 w-60 '>
+        <div className='h-screen bg-primaryColor w-60 '>
             <div className='flex items-center justify-center space-x-3 p-4'>
                 <img
                     src='/assets/cryptocurrency.png'
                     alt='logo'
                     className='h-16'
                 />
-                <p className='text-2xl font-semibold text-blue-600 '>
+                <p className='text-2xl font-semibold text-secondaryColor '>
                     Cryptoverse
                 </p>
             </div>
@@ -20,7 +20,7 @@ const Sidebar = () => {
                         isActive ? 'activeLink' : 'notActiveLink'
                     }
                 >
-                    <span className='hover:text-blue-900 transition-all duration-300'>
+                    <span className='hover:text-primaryColor transition-all duration-300'>
                         Home
                     </span>
                 </NavLink>
@@ -30,7 +30,7 @@ const Sidebar = () => {
                         isActive ? 'activeLink' : 'notActiveLink'
                     }
                 >
-                    <span className='hover:text-blue-900 transition-all duration-300'>
+                    <span className='hover:text-primaryColor transition-all duration-300'>
                         Cryptocurrencies
                     </span>
                 </NavLink>
@@ -40,7 +40,7 @@ const Sidebar = () => {
                         isActive ? 'activeLink' : 'notActiveLink'
                     }
                 >
-                    <span className='hover:text-blue-900 transition-all duration-300'>
+                    <span className='hover:text-primaryColor transition-all duration-300'>
                         News
                     </span>
                 </NavLink>
