@@ -3,10 +3,3 @@
 @tailwind utilities;
 
 
-.notActiveLink {
-    @apply text-white font-thin hover:bg-secondaryColor duration-300 p-4;
-}
-
-.activeLink {
-    @apply text-white font-thin transition-all duration-300 p-4 bg-secondaryColor;
-}
