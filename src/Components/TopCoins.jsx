@@ -1,6 +1,6 @@
 import { Crypto } from './';
-import { Link } from 'react-router-dom';
 const TopCoins = ({ coins, count }) => {
+    coins = coins.coins ? coins.coins : coins;
     return (
         <div className='flex mt-10'>
             <div className='flex flex-col w-full'>
@@ -53,12 +53,11 @@ const TopCoins = ({ coins, count }) => {
                                         >
                                             Last Day
                                         </th>
-
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {Object.keys(coins).length > 0 &&
-                                        coins.coins.map(
+                                        coins.map(
                                             (item, index) =>
                                                 index < count && (
                                                     <Crypto

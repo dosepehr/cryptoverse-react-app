@@ -26,7 +26,6 @@ const CoinDetails = ({ coin, setCoin }) => {
         };
         fetchData();
     }, []);
-    console.log(coin);
     return (
         <>
             {Object.keys(coin).length > 0 && (

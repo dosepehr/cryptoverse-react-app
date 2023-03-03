@@ -29,7 +29,12 @@ const App = () => {
                     <Route path='/Home' element={<Home coins={coins} />} />
                     <Route
                         path='/Cryptocurrencies'
-                        element={<Cryptocurrencies coins={coins} />}
+                        element={
+                            <Cryptocurrencies
+                                coins={coins}
+                                setCoins={setCoins}
+                            />
+                        }
                     />
                     <Route
                         path='/coins/:id'
