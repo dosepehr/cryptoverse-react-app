@@ -1,7 +1,6 @@
 // ! Common
-export { default as Sidebar } from './Common/Sidebar';
 export { default as Footer } from './Common/Footer';
-
+export {default as Header} from './Common/Header'
 // ! Pages
 
 export { default as Home } from './Pages/Home';

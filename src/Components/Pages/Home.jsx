@@ -4,7 +4,7 @@ const Home = ({ coins }) => {
     console.log(coins);
     return (
         <div className=' w-full p-8'>
-            <p className='text-2xl text-center w-full text-primaryColor mt-6'>
+            <p className='text-2xl w-full text-primaryColor mt-6'>
                 Global Crypto Stats
             </p>
             {Object.keys(coins).length > 0 && (

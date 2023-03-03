@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import {
-    Sidebar,
     Home,
     Cryptocurrencies,
     Footer,
-    MainLayout,
     CoinDetails,
+    Header,
+    MainLayout,
 } from './Components';
-import { Routes, Route ,Navigate} from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { getCoins } from './services';
 const App = () => {
     const [coins, setCoins] = useState([]);
@@ -22,8 +22,8 @@ const App = () => {
     }, []);
     return (
         <>
+            <Header />
             <MainLayout>
-                <Sidebar />
                 <Routes>
                     <Route path='/' element={<Navigate to='/Home' />} />
                     <Route path='/Home' element={<Home coins={coins} />} />
