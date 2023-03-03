@@ -1,6 +1,7 @@
 import millify from 'millify';
 import { TopCoins } from '../';
 const Home = ({ coins }) => {
+    console.log(coins);
     return (
         <div className=' w-full p-8'>
             <p className='text-2xl text-center w-full text-primaryColor mt-6'>

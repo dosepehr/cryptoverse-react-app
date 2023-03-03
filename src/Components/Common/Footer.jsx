@@ -18,7 +18,6 @@ const Footer = () => {
                 >
                     dosepehr :))
                 </a>
-                
             </div>
         </div>
     );

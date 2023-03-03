@@ -11,7 +11,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
-function Chart({ sparkline, change ,ticks}) {
+function Chart({ sparkline, change, ticks }) {
     ChartJS.register(
         CategoryScale,
         LinearScale,
@@ -92,7 +92,11 @@ function Chart({ sparkline, change ,ticks}) {
         ],
     };
 
-    return <Line options={options} data={data} />;
+    return (
+        <div className='w-full'>
+            <Line options={options} data={data} />
+        </div>
+    );
 }
 
 export default Chart;
